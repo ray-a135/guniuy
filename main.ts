@@ -34,16 +34,55 @@ let mySprite6 = sprites.create(img`
     f f . . . f f d f d f d . . . . 
     . . . . f f f f f f f f . . . . 
     `, SpriteKind.Enemy)
-let mySprite9 = sprites.create(assets.image`mmmmmm9999iiiiiiooooopppppyyytytyggg`, SpriteKind.Projectile)
-mySprite5.setPosition(22, 28)
+let mySprite9 = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    f f f . . . . . . . f f f . . . 
+    . . . f f . . . . f f . f f f f 
+    . . . . f f . . 5 5 f f 5 . . . 
+    . . . . . 5 5 5 5 5 . . 5 5 f f 
+    . . . . . 5 5 f e e e f . . . . 
+    . . . . . e e e e e e . . . . . 
+    f f f f 5 e f e e f e . . . f f 
+    f . . . 5 e e e f f f f f f . f 
+    . . . . . e f f f e f f . . f . 
+    . . . . . f f f f f f f . f . f 
+    . . . . . f d d d d d d . f f f 
+    . . f f f f d f d f f d f f . . 
+    f f . . . f f d f d f d . . . . 
+    . . . . f f f f f f f f . . . . 
+    `, SpriteKind.Projectile)
 mySprite.setPosition(40, 26)
-mySprite6.setPosition(34, 42)
 controller.moveSprite(mySprite)
-music.play(music.createSong(hex`0078000408020400001c00010a006400f401640000040000000000000000000000000005000004200008000c0002192214001800012424002800011d2c003000011b3400380002192403001c0001dc00690000045e010004000000000000000000000564000104000333000000040001270c00100001201000140001251c002000031e24272400280001272c00300002202934003800011e38003c00012a06001c00010a006400f4016400000400000000000000000000000000000000021e000000040001190c001000011b1400180001191c002000011924002800011e07001c00020a006400f401640000040000000000000000000000000000000003250000000400012208000c0002292c0c001000012c10001400012a14001800012a1c002000012c`), music.PlaybackMode.UntilDone)
-let mySprite2 = sprites.create(assets.image`koi`, SpriteKind.Enemy)
+music.play(music.createSong(assets.song`ppp999vl`), music.PlaybackMode.UntilDone)
+let mySprite2 = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Player)
 mySprite2.setPosition(7, 18)
-let mySprite3 = sprites.create(assets.image`koi`, SpriteKind.Projectile)
-let mySprite4 = sprites.create(assets.image`xxxtentacion`, SpriteKind.Enemy)
+let mySprite3 = 0
+let mySprite4 = sprites.create(assets.image`dababy`, SpriteKind.Enemy)
 mySprite4.setPosition(0, 0)
 mySprite4.follow(mySprite)
+mySprite2.follow(mySprite)
+mySprite5.follow(mySprite)
 controller.moveSprite(mySprite)
+mySprite5.setPosition(22, 28)
+mySprite6.setPosition(34, 42)
+forever(function () {
+	
+})
